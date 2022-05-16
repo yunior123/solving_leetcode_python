@@ -42,6 +42,7 @@ def depth_first_search_recursive(graph, source):
     if not (source in graph):
         return
     print(source)
+    # LOOP
     for neighbor in graph[source]:
         depth_first_search_recursive(graph, neighbor)
 
